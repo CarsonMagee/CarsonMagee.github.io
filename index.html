@@ -43,6 +43,7 @@
 			</section>
 		</div>
 		<script type="text/javascript">
+			// Only .slider1 is actually being used here. You could probably drop 2 and 3 to save some processing.
 			$('.slider1').bxSlider({
 				mode: 'fade',
 				captions: false,
@@ -65,10 +66,7 @@
 				pager:false,
 				controls:false,
 			});
-			Ext.Loader.setConfig({
-    disableCaching: false,
-    enabled: true
-});
+			// this bit was breaking it.
 		</script>
 <!--- Slider End -->
 	</div>
